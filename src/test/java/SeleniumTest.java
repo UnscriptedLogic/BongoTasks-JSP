@@ -64,7 +64,6 @@ public class SeleniumTest {
         driver.findElement(By.id("Selenium Created Task"));
         driver.findElement(By.id("edit-Selenium Created Task")).click();
 
-
         driver.findElement(By.id("edit-task-name")).clear();
         driver.findElement(By.id("edit-task-name")).sendKeys("Selenium Modified Task Name");
         driver.findElement(By.id("edit-task-desc")).clear();
