@@ -147,6 +147,7 @@
                 </h1>
             </div>
             <button
+                    id="add-task-button"
                     class="input-button"
                     type="submit"
                     onclick="location.href='createTaskForm.jsp'"
@@ -175,7 +176,7 @@
                                 ${task.status ? "checked" : ""}
                             />
                         </td>
-                        <td class="table-task" width="200px">
+                        <td id="${task.name}" class="table-task" width="200px">
                                 ${task.name}
                         </td>
                         <td>
@@ -183,14 +184,14 @@
                         </td>
                         <td class="centered-table" width="20px">
                             <form action="TaskServlet/fillTask" method="post">
-                                <button class="table-button" type="submit" name="edit-id" value=${task.id}>
+                                <button id="edit-${task.name}" class="table-button" type="submit" name="edit-id" value=${task.id}>
                                     <i class="fa fa-pencil-square-o edit-button" aria-hidden="true"></i>
                                 </button>
                             </form>
                         </td>
                         <td class="centered-table" width="20px">
                             <form method="post" action="TaskServlet/deleteTask">
-                                <button class="table-button" type="submit" name="delete-id" value=${task.id}>
+                                <button id="delete-${task.name}" class="table-button" type="submit" name="delete-id" value=${task.id}>
                                     <i class="fa fa-trash" aria-hidden="true"></i>
                                 </button>
                             </form>

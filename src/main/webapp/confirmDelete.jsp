@@ -157,6 +157,7 @@
                     </div>
                     <div class="form-buttons">
                         <button
+                                id="confirm-delete-button"
                                 class="input-button scale-up-center-slow"
                                 type="button"
                                 onclick="location.href='<%=request.getContextPath()%>/'"

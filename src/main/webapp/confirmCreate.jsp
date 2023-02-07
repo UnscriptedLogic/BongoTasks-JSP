@@ -66,6 +66,7 @@
         </div>
         <p></p>
         <button
+                id="confirm-add"
                 class="input-button"
                 type="button"
                 onclick="location.href='<%=request.getContextPath()%>/'"

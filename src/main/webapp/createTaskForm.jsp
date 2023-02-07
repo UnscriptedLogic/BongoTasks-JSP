@@ -149,11 +149,11 @@
                 </div>
                 <div>
                     <label class="form-label">Name</label>
-                    <input name="taskName" class="form-input" placeholder="e.g. 'Buy Milk'">
+                    <input id="task-name-field" name="taskName" class="form-input" placeholder="e.g. 'Buy Milk'">
                 </div>
                 <div>
                     <label class="form-label">Description</label>
-                    <textarea name="taskDesc" class="form-input form-textarea"
+                    <textarea id="task-desc-field" name="taskDesc" class="form-input form-textarea"
                               placeholder="e.g. 'Go to UnfairPrice buy milk and come back home'"></textarea>
                 </div>
                 <div class="form-buttons">
@@ -166,6 +166,7 @@
                         <i class="fa fa-ban"></i> Cancel
                     </button>
                     <button
+                            id="submit-button"
                             class="input-button confirm"
                             type="submit"
                     >

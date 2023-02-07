@@ -140,11 +140,11 @@
                 </div>
                 <div>
                     <label class="form-label">Name</label>
-                    <input name="taskName" class="form-input" value="${task.name}" placeholder="${task.name}">
+                    <input id="edit-task-name" name="taskName" class="form-input" value="${task.name}" placeholder="${task.name}">
                 </div>
                 <div>
                     <label class="form-label">Description</label>
-                    <textarea name="taskDesc" class="form-input form-textarea"
+                    <textarea id="edit-task-desc" name="taskDesc" class="form-input form-textarea"
                               placeholder="${task.description}">${task.description}</textarea>
                 </div>
                 <div class="form-buttons">
@@ -157,6 +157,7 @@
                         <i class="fa fa-ban"></i> Cancel
                     </button>
                     <button
+                            id="confirm-edit"
                             class="input-button confirm"
                             type="submit"
                     >
