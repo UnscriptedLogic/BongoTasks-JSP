@@ -98,7 +98,6 @@ public class TaskServlet extends HttpServlet {
                 boolean status = resultSet.getBoolean("status");
                 taskToUpdate = new Task(id, name, description, status);
             }
-
             request.setAttribute("task", taskToUpdate);
             request.getRequestDispatcher("/editTaskForm.jsp").forward(request, response);
 
